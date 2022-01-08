@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "unstar-pipfile"
-version = "0.0.1a2"
+version = "0.0.1a3"
 description = "If you have stars in your Pipfile, this tool is for you!"
 authors = []
 license = "MIT"
@@ -33,7 +33,7 @@ pytest = "^6.2.5"
 profile = "black"
 
 [tool.poetry.scripts]
-unstar-pipfile = "unstar-pipfile.__main__:main"
+unstar-pipfile = "unstar_pipfile.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
