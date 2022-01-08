@@ -3,6 +3,7 @@
 import json
 import os.path
 import sys
+from typing import Dict, Tuple
 
 import click
 from tomlkit import dumps, parse
@@ -67,7 +68,7 @@ def amend_pipfile():
         new_pipfile.write(dumps(new_toml_doc))
 
 
-def check_files() -> tuple[bool, str]:
+def check_files() -> Tuple[bool, str]:
     """Check if necessary files are present in current working directory."""
     files = (PIPFILE, PIPFILE_LOCK)
     for file in files:
@@ -76,7 +77,7 @@ def check_files() -> tuple[bool, str]:
     return True, ""
 
 
-def get_packages_and_versions(package_type: str = "default") -> dict:
+def get_packages_and_versions(package_type: str = "default") -> Dict:
     """Parse Pipfile.lock and extract package names and versions."""
     ret = {}
     with open(PIPFILE_LOCK, "r") as pipfile:

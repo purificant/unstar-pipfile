@@ -4,9 +4,9 @@ from pathlib import Path
 from unstar_pipfile.unstar_pipfile import (
     PIPFILE,
     PIPFILE_LOCK,
+    amend_pipfile,
     check_files,
     get_packages_and_versions,
-    amend_pipfile,
 )
 
 
