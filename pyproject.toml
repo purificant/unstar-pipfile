@@ -27,6 +27,7 @@ tomlkit = "^0.8.0"
 isort = "^5.10.1"
 black = "^21.12b0"
 pipenv = "^2021.11.23"
+pytest = "^6.2.5"
 
 [tool.isort]
 profile = "black"
