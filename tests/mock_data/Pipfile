@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+scikit-learn = "*"
+requests = "*"
+urllib3 = "*"
+nltk = {extras = ["corenlp"], version = "*"}
+pillow = "*"
+
+[dev-packages]
+pytest = "*"
+sqlalchemy = {extras = ["postgresql"], version = "*"}
+
+[requires]
+python_version = "^3.7"

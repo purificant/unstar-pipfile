@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "unstar-pipfile"
+version = "0.1.0"
+description = "If you have stars in your Pipfile, this tool is for you!"
+authors = []
+license = "MIT"
+packages = [{ include = "unstar_pipfile" }]
+readme = "README.md"
+homepage = "https://github.com/purificant/unstar-pipfile"
+repository = "https://github.com/purificant/unstar-pipfile"
+documentation = "https://github.com/purificant/unstar-pipfile"
+keywords = ["pipfile", "dependency", "pipenv"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+    "Development Status :: 5 - Production/Stable",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.3"
+tomlkit = "^0.8.0"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.10.1"
+black = "^21.12b0"
+pipenv = "^2021.11.23"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
