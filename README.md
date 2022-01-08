@@ -9,3 +9,10 @@ If you have stars in your Pipfile, this project is for you!
 
 # Installation
 `pip install unstar-pipfile`
+
+# Usage
+`python -m unstar_pipfile`
+Run as a python module in the directory with `Pipfile` and `Pipfile.lock`.
+
+# Help
+`python -m unstar_pipfile --help`

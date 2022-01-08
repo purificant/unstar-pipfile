@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "unstar-pipfile"
-version = "0.0.1a5"
+version = "0.2.0"
 description = "If you have stars in your Pipfile, this tool is for you!"
 authors = []
 license = "MIT"
